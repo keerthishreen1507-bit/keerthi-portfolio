@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{ margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif; }
+html{ font-size:62.5%; scroll-behavior:smooth; }
+body{ background:black; color:white; line-height:1.6; }
+
+/* ---------- Header ---------- */
+header{
+    position:fixed; top:0; left:0; width:100%;
+    display:flex; justify-content:space-between; align-items:center;
+    padding:1rem 9%; background:rgba(0,0,0,0.85); z-index:1000;
+}
+.logo{ font-size:2.5rem; color:#1e90ff; font-weight:600; }
+nav a{ margin-left:3rem; font-size:1.6rem; color:white; transition:.3s; }
+nav a:hover, nav a.active{ color:#1e90ff; }
+
+/* ---------- Sections ---------- */
+section{ min-height:100vh; padding:8rem 9% 4rem; }
+.section-title{ font-size:4rem; color:#1e90ff; margin-bottom:4rem; text-align:center; }
+
+/* ---------- Home ---------- */
+.home{ display:flex; justify-content:center; align-items:center; gap:6rem; flex-wrap:wrap; padding-top:10rem; }
+.home-img img{ width:280px; border-radius:50%; border:4px solid #1e90ff; box-shadow:0 0 25px #1e90ff; }
+.home-content{ max-width:600px; }
+.home-content h1{ font-size:5rem; margin-bottom:1rem; }
+.home-content h3{ font-size:3rem; margin-bottom:1rem; }
+.home-content p{ font-size:1.6rem; margin:1.5rem 0 2.5rem; line-height:1.8; }
+.social-icons{ display:flex; gap:1.5rem; margin-bottom:2rem; }
+.social-icons a{ display:flex; justify-content:center; align-items:center; width:45px; height:45px; border:2px solid #1e90ff; border-radius:50%; font-size:2rem; color:#1e90ff; transition:.3s; }
+.social-icons a:hover{ background:#1e90ff; color:black; transform:scale(1.2); }
+.btn{ display:inline-block; padding:1rem 2.5rem; border:2px solid #1e90ff; border-radius:3rem; color:#1e90ff; font-size:1.6rem; transition:.3s; }
+.btn:hover{ background:#1e90ff; color:black; box-shadow:0 0 20px #1e90ff; }
+
+/* ---------- Typing ---------- */
+.typing-text{ font-size:2.5rem; font-weight:600; }
+.typing-text span::before{ content:"Web Developer"; color:#1e90ff; animation:words 20s infinite; }
+@keyframes words{
+    0%,20%{ content:"Web Developer"; }
+    21%,40%{ content:"Frontend Developer"; }
+    41%,60%{ content:"JavaScript Enthusiast"; }
+    61%,80%{ content:"Python Learner"; }
+    81%,100%{ content:"WordPress Designer"; }
+}
+
+/* ---------- Grid Reusable ---------- */
+.grid-container{ display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem; }
+.card{ background:#111; padding:2.5rem; border-radius:1rem; border:2px solid #1e90ff; transition:.3s; text-align:center; }
+.card:hover{ transform:translateY(-8px); background:#1a1a1a; box-shadow:0 0 20px #1e90ff; }
+.card i{ font-size:3.5rem; color:#1e90ff; margin-bottom:1rem; }
+.card h3{ font-size:2rem; margin-bottom:1rem; }
+.card p, .card a{ font-size:1.4rem; color:#ccc; }
+
+/* ---------- Skills (Improved) ---------- */
+#skills { text-align:center; padding:6rem 9%; background:black; }
+.skills-grid { 
+    display:grid; 
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); 
+    gap:2.5rem; 
+    max-width:1000px; 
+    margin:auto; 
+}
+.skill-card {
+    background:#111; 
+    border:2px solid #1e90ff; 
+    border-radius:1rem; 
+    padding:2rem; 
+    text-align:center; 
+    transition:.3s; 
+}
+.skill-card:hover { background:#1a1a1a; transform:translateY(-5px); box-shadow:0 0 15px #1e90ff; }
+.skill-card i { font-size:3rem; color:#1e90ff; margin-bottom:1rem; }
+.skill-card h3 { font-size:2rem; margin-bottom:1rem; color:white; }
+.progress-bar { background:#222; border-radius:10px; height:1rem; overflow:hidden; margin:1rem 0; }
+.progress-bar span { display:block; height:100%; background:linear-gradient(90deg,#1e90ff,#00bfff); border-radius:10px; }
+.skill-card p { font-size:1.4rem; color:#1e90ff; font-weight:600; }
+
+/* ---------- Responsive ---------- */
+@media(max-width:768px){
+    .home{ flex-direction:column; text-align:center; }
+    .home-content{ text-align:center; }
+    .social-icons{ justify-content:center; }
+}
