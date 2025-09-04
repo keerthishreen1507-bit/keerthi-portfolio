@@ -3,108 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Keerthi Shree - Portfolio</title>
+  <title>Keerthi Shree | Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <!-- Header -->
   <header>
-    <div class="logo">Keerthi Shree</div>
     <nav>
-      <a href="#home">Home</a>
-      <a href="#skills">Skills</a>
-      <a href="#education">Education</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <h2 class="logo">Keerthi Shree</h2>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
   <!-- Home Section -->
-  <section class="intro" id="home">
-    <h1>Hi, I'm <span>Keerthi Shree</span></h1>
-    <h2>I’m a <span>JavaScript Enthusiast</span></h2>
-    <p>
-      I am an engineering student specializing in WordPress, HTML, CSS, JavaScript, and Python. 
-      I am passionate about building responsive websites and solving real-world problems.
-    </p>
-
-    <!-- Social Links -->
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/keerthi-shree-805b01354" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/keerthishreen1507-bit" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="mailto:keerthishreen1507@gmail.com"><i class="fas fa-envelope"></i></a>
-      <a href="https://www.instagram.com/keerthi_shree_n/" target="_blank"><i class="fab fa-instagram"></i></a>
+  <section id="home" class="home">
+    <div class="home-content">
+      <h1>Hi, I'm <span>Keerthi Shree</span></h1>
+      <h2>I'm a <span class="highlight">JavaScript Enthusiast</span></h2>
+      <p>
+        I am an engineering student specializing in WordPress, HTML, CSS, JavaScript, and Python. 
+        I am passionate about building responsive websites and solving real-world problems.
+      </p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/keerthi-shree-805b01354" target="_blank">🔗 LinkedIn</a>
+        <a href="https://github.com/keerthishreen1507-bit" target="_blank">💻 GitHub</a>
+        <a href="mailto:keerthishreen1507@gmail.com">📧 Email</a>
+        <a href="https://www.instagram.com/keerthi_shree_n" target="_blank">📷 Instagram</a>
+      </div>
+      <a href="#contact" class="btn">Hire Me</a>
     </div>
-
-    <!-- Hire Me Button -->
-    <a href="mailto:keerthishreen1507@gmail.com" class="hire-btn">Hire Me</a>
   </section>
 
   <!-- Skills Section -->
-  <section class="skills" id="skills">
-    <h2 class="section-title">My Skills</h2>
-    <div class="card-container">
-      <div class="card"><i class="fab fa-wordpress"></i><h3>WordPress</h3></div>
-      <div class="card"><i class="fab fa-html5"></i><h3>HTML</h3></div>
-      <div class="card"><i class="fab fa-css3-alt"></i><h3>CSS</h3></div>
-      <div class="card"><i class="fab fa-js"></i><h3>JavaScript</h3></div>
-      <div class="card"><i class="fab fa-python"></i><h3>Python</h3></div>
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-box">WordPress Development</div>
+      <div class="skill-box">HTML</div>
+      <div class="skill-box">CSS</div>
+      <div class="skill-box">JavaScript</div>
+      <div class="skill-box">Python</div>
     </div>
   </section>
 
   <!-- Education Section -->
-  <section class="education" id="education">
-    <h2 class="section-title">Education</h2>
-    <div class="card edu-card">
-      <i class="fas fa-graduation-cap"></i>
-      <h3>Bachelor of Engineering</h3>
-      <p>Electronics and Communication</p>
+  <section id="education" class="education">
+    <h2>Education</h2>
+    <div class="edu-box">
+      <h3>B.E. in Electronics and Communication</h3>
       <p>Global Academy of Technology, Bangalore</p>
-      <p>2021 – 2026</p>
+      <p><b>Duration:</b> 2021 - 2026</p>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section class="projects" id="projects">
-    <h2 class="section-title">Projects</h2>
-    <div class="card-container">
-      <div class="card project-card">
-        <i class="fas fa-car"></i>
-        <h3>Alcohol Detection System</h3>
-        <p>Engine lock with GSM alerts when alcohol is detected.</p>
-      </div>
-      <div class="card project-card">
-        <i class="fas fa-glasses"></i>
-        <h3>E-Vision Smart Eyewear</h3>
-        <p>Obstacle detection and real-time guidance for visually impaired individuals.</p>
-      </div>
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-box">
+      <h3>Alcohol Detection System</h3>
+      <p>Engine lock with GSM alerts when alcohol is detected.</p>
+    </div>
+    <div class="project-box">
+      <h3>E-Vision Smart Eyewear</h3>
+      <p>Obstacle detection and real-time guidance for visually impaired.</p>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <h2 class="section-title">Contact Me</h2>
-    <div class="card-container">
-      <div class="card contact-card">
-        <i class="fas fa-envelope"></i>
-        <p><a href="mailto:keerthishreen1507@gmail.com">keerthishreen1507@gmail.com</a></p>
-      </div>
-      <div class="card contact-card">
-        <i class="fab fa-linkedin"></i>
-        <p><a href="https://www.linkedin.com/in/keerthi-shree-805b01354" target="_blank">LinkedIn</a></p>
-      </div>
-      <div class="card contact-card">
-        <i class="fab fa-github"></i>
-        <p><a href="https://github.com/keerthishreen1507-bit" target="_blank">GitHub</a></p>
-      </div>
-      <div class="card contact-card">
-        <i class="fas fa-phone"></i>
-        <p>7022305935</p>
-      </div>
-    </div>
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>📧 Email: <a href="mailto:keerthishreen1507@gmail.com">keerthishreen1507@gmail.com</a></p>
+    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/keerthi-shree-805b01354" target="_blank">linkedin.com/in/keerthi-shree</a></p>
+    <p>💻 GitHub: <a href="https://github.com/keerthishreen1507-bit" target="_blank">github.com/keerthishreen1507-bit</a></p>
+    <p>📞 Phone: <a href="tel:+917022305935">+91 7022305935</a></p>
   </section>
 
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Keerthi Shree | All Rights Reserved</p>
+  </footer>
 </body>
 </html>
